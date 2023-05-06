@@ -16,7 +16,7 @@ function Login() {
       await auth.signInWithEmailAndPassword(email, password);
       setIsLoggedIn(true);
     } catch (error) {
-      setErrorMessage('Nome do usuário ou senha incorreto');
+      setErrorMessage('E-mail ou senha incorreto');
     }
   };
 
