@@ -15,6 +15,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 const firestore = firebase.firestore();
+const auth = firebase.auth();
 
 async function getData() {
     const usersRef = firestore.collection('values');
@@ -29,4 +30,4 @@ async function getData() {
     return users;
 }
 
-export { firestore, getData };
+export { firestore, getData, auth };
