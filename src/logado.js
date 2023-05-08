@@ -93,7 +93,7 @@ function Home() {
     };
 
     return (
-        <div className="login-container">
+        <div className="logado">
             <div>
                 <h1>Adicionar dados</h1>
                 <form onSubmit={handleSubmit}>
@@ -104,8 +104,7 @@ function Home() {
                         <button type="submit">Adicionar</button>
                     </div>
                 </form>
-            </div>
-            <br></br>
+            </div>            
             <div className="procurar-firebase">
                 <h1>Procurar dados no firebase</h1>
                 <form onSubmit={handleSearch}>
@@ -132,7 +131,7 @@ function Home() {
                 {!isLoading && searchResult.length > 0 && showTable()}
             </div>
             <div className="digitar-numero">
-                <h1>Digite um numbero</h1>
+                <h1>Digite um numero</h1>
                 <div className="imput">
                     <input type="number" value={number} onChange={handleInputChange} />
                 </div>

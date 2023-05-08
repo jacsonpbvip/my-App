@@ -42,42 +42,33 @@ function Login() {
       {!isPasswordReset &&
         <form onSubmit={handleLogin}>
           <label htmlFor="email" className="login-label">E-mail:</label>
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            className="login-input"
-          />
+          <div className="imput">
+            <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} required className="login-input" />
+          </div>
           <label htmlFor="password" className="login-label">Senha:</label>
-          <input
-            type="password"
-            id="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-            className="login-input"
-          />
-          <button type="submit" className="login-button">Entrar</button>
-          <br></br>
-          <button type="button" onClick={() => setIsPasswordReset(true)} className="login-button">Recuperar Senha</button>
+          <div className="imput">
+            <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} required className="login-input" />
+          </div>
+          <div className="button-entrar">
+            <button type="submit" className="login-button">Entrar</button>
+          </div>
+          <div className="button">
+            <button type="button" onClick={() => setIsPasswordReset(true)} className="login-button">Recuperar Senha</button>
+          </div>
         </form>
       }
       {isPasswordReset &&
         <form onSubmit={handlePasswordReset}>
           <label htmlFor="email" className="login-label">Digite seu e-mail para recuperar sua senha:</label>
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            className="login-input"
-          />
-          <button type="submit" className="login-button">Enviar E-mail de Recuperação de Senha</button>
-          <br></br>
-          <button type="button" onClick={() => setIsPasswordReset(false)} className="login-button">Voltar</button>
+          <div className="imput">
+            <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+          </div>
+          <div className="button">
+            <button type="submit" className="login-button">Enviar E-mail de Recuperação de Senha</button>
+          </div>
+          <div className="button">
+            <button type="button" onClick={() => setIsPasswordReset(false)} className="login-button">Voltar</button>
+          </div>
         </form>
       }
     </div>
