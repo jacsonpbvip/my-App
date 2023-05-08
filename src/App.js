@@ -4,9 +4,10 @@ import './App.css';
 import Login from './login';
 import Logado from './logado';
 
+
 function App() {
   return (
-    <div className="main">          
+    <div className="main">
       <Router>
         <Switch>
           <Route exact path="/">
@@ -14,11 +15,11 @@ function App() {
           </Route>
           <Route path="/Logado">
             <Logado />
-          </Route> 
+          </Route>
           <Route path="/Login">
             <Login />
-          </Route>     
-          </Switch>
+          </Route>
+        </Switch>
       </Router>
     </div>
   );
