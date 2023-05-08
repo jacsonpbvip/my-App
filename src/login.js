@@ -32,7 +32,7 @@ function Login() {
   }
 
   if (isLoggedIn) {
-    return <Redirect to="/logado" />;
+    return <Redirect to="./Home" />;
   }
 
   return (
