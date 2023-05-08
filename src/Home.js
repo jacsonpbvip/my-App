@@ -1,12 +1,9 @@
-import { Link } from 'react-router-dom';
 import "semantic-ui-css/semantic.min.css";
 import "./App.css";
-import React, { useState } from "react";
-import { firestore, auth } from "./firebase";
+import {  auth } from "./firebase";
 import "semantic-ui-css/semantic.min.css";
 import "./App.css";
 import { useHistory } from 'react-router-dom';
-
 
 function Home() {
     const history = useHistory();

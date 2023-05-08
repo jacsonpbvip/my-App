@@ -4,17 +4,8 @@ import numberToWords from 'number-to-words';
 import "./App.css";
 
 function Desafio() {
-  const [value, setValue] = useState('');
-    const [searchValue, setSearchValue] = useState('');
-    const [searchResult, setSearchResult] = useState([]);
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [displayName, setDisplayName] = useState('');
-    const [signUpError, setSignUpError] = useState(null);
     const [number, setNumber] = useState('');
     const history = useHistory();
-    const [isLoading, setIsLoading] = useState(false);
-    const [isButtonClicked, setIsButtonClicked] = useState(false);
     
     const handleClick = () => {
       history.push("/Home");

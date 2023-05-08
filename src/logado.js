@@ -1,22 +1,16 @@
 import React, { useState } from "react";
-import { firestore, auth } from "./firebase";
+import { auth } from "./firebase";
 import "semantic-ui-css/semantic.min.css";
 import "./App.css";
-import numberToWords from 'number-to-words';
+
 import { useHistory } from 'react-router-dom';
 
 function Home() {
-    const [value, setValue] = useState('');
-    const [searchValue, setSearchValue] = useState('');
-    const [searchResult, setSearchResult] = useState([]);
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [displayName, setDisplayName] = useState('');
-    const [signUpError, setSignUpError] = useState(null);
-    const [number, setNumber] = useState('');
+    const [signUpError, setSignUpError] = useState(null);    
     const history = useHistory();
-    const [isLoading, setIsLoading] = useState(false);
-    const [isButtonClicked, setIsButtonClicked] = useState(false);
     
     const handleClick = () => {
         history.push("/Home");
@@ -57,8 +51,7 @@ function Home() {
             <div className="Voltar">
           <button onClick={handleClick}>Voltar</button>
         </div>
-    </div>   
-        
+    </div>        
     );
 }
 

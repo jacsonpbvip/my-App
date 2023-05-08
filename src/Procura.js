@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-import { firestore, auth } from "./firebase";
+import { firestore} from "./firebase";
 
 function ProcuraFirebase() {
   const [value, setValue] = useState('');
   const [searchValue, setSearchValue] = useState('');
-  const [searchResult, setSearchResult] = useState([]);
-  const [number, setNumber] = useState('');
+  const [searchResult, setSearchResult] = useState([]); 
   const history = useHistory();
   const [isLoading, setIsLoading] = useState(false);
   const [isButtonClicked, setIsButtonClicked] = useState(false);
@@ -15,21 +14,13 @@ function ProcuraFirebase() {
     history.push("/Home");
   };
 
-  const handleLogout = () => {
-    auth.signOut();
-    history.push('/login');
-  };
-  const handleInputChange = (event) => {
-    setNumber(event.target.value);
-  };
-
   const handleSubmit = (e) => {
     if (value.length > 0) {
-      e.preventDefault();
-      firestore.collection('values').add({ value });
-      setValue('');
+        e.preventDefault();
+        firestore.collection('values').add({ value });
+        setValue('');
     }
-  };
+};
   const handleSearch = async (e) => {
     e.preventDefault();
     setIsLoading(true);
@@ -73,19 +64,17 @@ function ProcuraFirebase() {
   return (
 
     <div className="Procura">
-      <form>
-        <div className="adicionar-firebase">
-          <h1>Adicionar dados</h1>
+      <div>
+        <h1>Adicionar dados</h1>
           <form onSubmit={handleSubmit}>
             <div className="imput">
-              <input type="text" value={value} onChange={(e) => setValue(e.target.value)} />
-            </div>
+                <input type="text" value={value} onChange={(e) => setValue(e.target.value)} />
+            </div>                    
             <div className="button">
-              <button type="submit">Adicionar</button>
+                <button type="submit">Adicionar</button>
             </div>
           </form>
-        </div>
-      </form>
+            </div>   
       <h1>Procurar dados no firebase</h1>
       <form onSubmit={handleSearch}>
         <div className="imput">
