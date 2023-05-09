@@ -20,7 +20,7 @@ Na pasta do my-App Core aberta no terminal powershell digite o comando para inst
 ## Start
 Na pasta do diretorio aberta pelo terminal digite:
 
- npm start
+    npm start
 
 Acesse a aplicação em:
 
