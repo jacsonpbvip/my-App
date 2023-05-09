@@ -12,16 +12,7 @@ function App() {
   return (
     <div className="main">
       <Router>
-        <Switch> 
-        <Route exact path="/">
-            <Login />
-          </Route>         
-          <Route path="/Logado">
-            <Logado />
-          </Route>
-          <Route path="/Home">
-            <Home />
-          </Route>      
+        <Switch>           
           <Route exact path="/" component={ Login} /> 
           <Route exact path="/login" component={ Login} />
           <Route exavt path="/Procura" component={ ProcuraFirebase} />
