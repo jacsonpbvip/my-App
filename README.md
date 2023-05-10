@@ -18,6 +18,7 @@ Permite cadastrar um email utilizada a integração com o Firebase Authenticatio
 -Desafio: 
 
 Recebe como entrada um número inteiro e retorna uma string de acordo com o número digitado.
+[Number To Words](https://www.npmjs.com/package/number-to-words)
 
 ## Pré-requisito
 
