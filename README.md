@@ -1,7 +1,7 @@
 # React-Firebase
 O aplicativo é composto por uma integração com o Firebase e possui poucas telas.
 
-Na primeira tela, chamada "Login", é utilizada a integração com o Firebase Authentication, permitindo o login com o email do Google e senha. Além disso, é possível recuperar a senha através do envio de um email para o usuário com as instruções de alteração.
+Na primeira tela, chamada "Login", é utilizada a integração com o Firebase Authentication, permitindo o login com o email do Google e senha de usuários cadastrados. Além disso, é possível recuperar a senha através do envio de um email para o usuário com as instruções de alteração.
 
 Na segunda tela, chamada "Menu", são exibidos os seguintes itens:
 
