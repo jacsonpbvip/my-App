@@ -57,62 +57,78 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-.logado {  
+.logado {
   margin-top: 15%;
   margin-bottom: 15%;
   align-items: center;
   background-color: #fff;
-  border: 10px solid rgb(38, 8, 145);
-  padding: 20px;
-  text-align: center;
-  margin-bottom: 5%;
-    
-}
-.Procura {  
-  margin-top: 15%;
-  margin-bottom: 15%;
-  align-items: center;
-  background-color: #fff;
-  border: 10px solid rgb(38, 8, 145);
-  padding: 20px;
-  text-align: center;
-  margin-bottom: 5%;
-    
-}
-.Home {  
-  margin-top: 15%;
-  margin-bottom: 15%;
-  align-items: center;
-  background-color: #fff;
-  border: 10px solid rgb(38, 8, 145);
-  padding: 20px 20px;
-  text-align: center;
-  margin-bottom: 5%;
-  height: 35%;
+  box-sizing: border-box;
   width: 50%;
-    
+  padding: 1em;
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+  width: 40%;
+
 }
-.Desafio {  
+
+.Procura {
   margin-top: 15%;
   margin-bottom: 15%;
   align-items: center;
   background-color: #fff;
-  border: 10px solid rgb(38, 8, 145);
+  box-sizing: border-box;
+  width: 50%;
+  padding: 1em;
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+  width: 40%;
+
+}
+
+.Home {
+  margin-top: 15%;
+  margin-bottom: 15%;
+  align-items: center;
+  background-color: #fff;
+  box-sizing: border-box;
+  width: 50%;
+  padding: 1em;
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+  width: 40%;
+
+}
+
+.Desafio {
+  margin-top: 15%;
+  margin-bottom: 15%;
+  align-items: center;
+  background-color: #fff;
+  box-sizing: border-box;
+  width: 50%;
+  padding: 1em;
+  border: 1px solid black;
   padding: 20px;
   text-align: center;
   margin-bottom: 5%;
-    
+
 }
-.login-container{  
-    margin-top: 15%;
-    margin-bottom: 15%;
-    align-items: center;
-    background-color: #fff;
-    border: 10px solid rgb(38, 8, 145);
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;       
-    width: 40%;  
+
+.login-container {
+  margin-top: 15%;
+  margin-bottom: 15%;
+  align-items: center;
+  background-color: #fff;
+  box-sizing: border-box;
+  width: 50%;
+  padding: 1em;
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+  width: 40%;
 }
 
 h1 {
@@ -137,7 +153,7 @@ input {
   font-size: 16px;
   margin-bottom: 15px;
   margin-top: 55%;
-  align-items: centera;  
+  align-items: centera;
 }
 
 button {
@@ -151,7 +167,7 @@ button {
 
 }
 
-.show-Table {  
+.show-Table {
   margin-top: 15px;
   display: flex;
   text-align: center;
@@ -163,7 +179,7 @@ table {
   border-collapse: collapse;
   width: 80%;
   margin: 0 auto;
-  
+
 }
 
 th {
@@ -172,13 +188,13 @@ th {
   margin-top: 10px;
   background-color: #ddd;
   font-weight: bold;
-  width: 80%; 
-  
+  width: 80%;
+
 }
 
 tr {
   font-family: "Courier New", Courier, monospace;
-  font-size: 16px;  
+  font-size: 16px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -187,7 +203,7 @@ tr {
 
 tr:nth-child(even) {
   background-color: #f2f2f2;
-  
+
 }
 
 .digitar-numero {
@@ -204,41 +220,48 @@ tr:nth-child(even) {
   margin: 5px 0;
   padding: 5px;
 }
-.imput{
-  margin-top: 5px;
-  margin-bottom:5px;
-}
-.button{
+
+.imput {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.button-entrar{
+
+.button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.button-entrar {
   padding: 10px 20px;
   color: #fff;
   border-radius: 20px;
   border: none;
-  font-size: 25px;
+  font-size: 40px;
   cursor: pointer;
 }
-.menu-button{  
+
+.menu-button {
   width: 90%;
   height: 50%;
   font-weight: bold;
   color: #fff;
   background-color: #4CAF50;
   border-radius: 10px;
-  
+
   margin-bottom: 5%;
 }
-.Voltar{
+
+.Voltar {
   margin-top: 10%;
 }
-.value{
+
+.value {
   text-align: right;
-   margin-left: 20%;
-  
+  margin-left: 20%;
+
 }
-.id{
+
+.id {
   text-align: justify;
-  
+
 }
