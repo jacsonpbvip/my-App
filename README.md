@@ -6,6 +6,7 @@ Na primeira tela, chamada "Login", é utilizada a integração com o Firebase Au
 Na segunda tela, chamada "Menu", são exibidos os seguintes itens:
 
 -Firebase:
+
 Adicionar dado: Permite adicionar um dado inserido no banco de dados do Firebase, podendo ser qualquer valor, inclusive símbolos. O valor será armazenado na forma de string.
 
 Procurar dados no Firebase: Consiste em uma busca no banco de dados, onde os valores estão sendo adicionados. O retorno dos valores é exibido em uma tabela, mostrando os valores dos campos "ID" e "Value". Os valores repetidos são exibidos apenas uma vez, com o destaque no campo "ID".
