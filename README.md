@@ -12,9 +12,11 @@ Adicionar dado: Permite adicionar um dado inserido no banco de dados do Firebase
 Procurar dados no Firebase: Consiste em uma busca no banco de dados, onde os valores estão sendo adicionados. O retorno dos valores é exibido em uma tabela, mostrando os valores dos campos "ID" e "Value". Os valores repetidos são exibidos apenas uma vez, com o destaque no campo "ID".
 
 -Adicionar novo login: 
+
 Permite cadastrar um email para que possa ser utilizado na tela "Login", permitindo a criação de novos usuários.
 
 -Desafio: 
+
 Recebe como entrada um número inteiro e retorna uma string de acordo com o número digitado.
 
 ## Pré-requisito
