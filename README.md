@@ -1,4 +1,10 @@
 # React-Firebase
+Consiste de uma integração com firebase em um app com poucas telas. 
+Na primeira tela "Login" utilizamos a intregração com firebase "Authentication"
+-Possibilitando login e senha com email google.
+-Possibilitando recuperação de senha, via email onde o usuario recebe um email para alterar senha.
+
+Na segunda tela temos "Menu"
 
 ## Pré-requisito
 
